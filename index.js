@@ -5,7 +5,7 @@ const app = express();
 
 // すべてのリクエストをkanimayo.f5.siにプロキシ
 app.use('/', createProxyMiddleware({
-  target: 'https://discord.com/',
+  target: 'https://suspended-domain.net/',
   changeOrigin: true,
   ws: true,
   secure: false // 証明書が自己署名などの場合に必要
